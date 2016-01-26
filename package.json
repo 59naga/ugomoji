@@ -1,0 +1,38 @@
+{
+  "name": "ugomoji",
+  "version": "0.0.0-alpha",
+  "private": true,
+  "dependencies": {
+    "jsgif": "git+https://github.com/AlicanC/jsgif.git",
+    "opentype.js": "^0.6.0",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "npm-run-all start:*",
+    "start:open": "open http://localhost:8080/",
+    "start:server": "webpack-dev-server --hot --inline"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "npm-run-all": "^1.5.0",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  }
+}
